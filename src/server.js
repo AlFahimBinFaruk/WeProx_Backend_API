@@ -24,7 +24,7 @@ app.get("/health", async (req, res, next) => {
   res.send({ message: "Awesome it works 🐻" });
 });
 //api main route
-app.use("/api", require("./routes/api.route"));
+app.use("/", require("./routes/api.route"));
 
 //api error route
 app.use((req, res, next) => {
